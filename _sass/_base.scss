@@ -49,6 +49,9 @@ h1{
     color: $gray-light;
     font-size: 0.5em;
     line-height: 1em;
+    span{
+      color: #fff;
+    }
   }
 }
 .subscribe{
