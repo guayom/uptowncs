@@ -1,0 +1,83 @@
+/**
+ * Reset some basic elements
+ */
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+    margin: 0;
+    padding: 0;
+}
+
+/**
+ * Ungrid
+ *http://chrisnager.github.io/ungrid/
+ */
+@media (min-width: 30em) {
+    .row { width: 100%; display: table; table-layout: fixed; }
+    .col { display: table-cell; }
+}
+
+.wrapper{
+  display: table;
+  min-height: 100%;
+}
+
+.container{
+  max-width: 80%;
+  margin: 0 auto;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/**
+ * Basic styling
+ */
+html,body { height: 100%; margin: 0px; padding: 0px; }
+body{
+  background:$gray-dark;
+  color: $gray-light;
+  text-align: center;
+  font-family: $base-font-family;
+}
+
+h1{
+  color: $orange;
+  font-size: 4em;
+  line-height: 1em;
+  font-family: $custom-font-family;
+  small{
+    color: $gray-light;
+    font-size: 0.5em;
+    line-height: 1em;
+  }
+}
+.subscribe{
+  margin-top: 50px;
+}
+form{
+  max-width: 300px;
+  margin: 0 auto;
+  input[type='email']{
+    width: 100%;
+    border: 0;
+    height: 18px;
+    padding: 8px;
+    margin: 10px 0;
+    font-size: 14px;
+    line-height: 18px;
+    color: $gray-light;
+  }
+}
+.button{
+  background:$orange;
+  transition: background-color 0.5s ease;
+  color: #fff;
+  border: 0;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  cursor: pointer;
+  &:hover{
+    background-color: darken($orange, 10%);
+  }
+}
